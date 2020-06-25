@@ -2,6 +2,6 @@
 
 export SHELL_WRAPPER=true
 
-source /root/.bash_custom
+eval "$(cat /root/.bash_custom)"
 
 exec bash "$@"
