@@ -47,7 +47,8 @@ RUN pip3 install awscli --upgrade && \
 RUN source ~/.bash_custom && npm -g install yarn
 
 RUN cp /bin/sh.old /bin/sh
-
+RUN cat ~/.bash_custom >> /usr/local/bin/shell-wrapper
+RUN echo 'exec bash "$@"' >> /usr/local/bin/shell-wrapper
 RUN mkdir -p /code
 
 WORKDIR /code
