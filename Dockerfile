@@ -34,7 +34,7 @@ COPY ./scripts/aws-account-profile-add.sh /usr/local/bin/aws-account-profile-add
 COPY ./scripts/aws-role-profile-add.sh /usr/local/bin/aws-role-profile-add
 COPY ./scripts/terraform-cloud-api-token-set.sh /usr/local/bin/terraform-cloud-api-token-set
 COPY ./scripts/shell-wrapper.sh /usr/local/bin/shell-wrapper
-COPY ./scripts/npm-registry-for-scope.sh /usr/local/bin/npm-registry-for-scope
+COPY ./scripts/npm-registry-scope.sh /usr/local/bin/npm-registry-scope
 COPY ./scripts/npm-registry-identity.sh /usr/local/bin/npm-registry-identity
 
 ARG NODE_VERSION=14.4.0
